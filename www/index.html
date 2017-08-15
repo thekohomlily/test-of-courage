@@ -116,13 +116,37 @@
         This is a map
       </p>
       <section style="padding: 10px">
-        <ons-button ng-click="navi.pushPage('map.html')">
-          Push Page
+        <ons-button ng-click="navi.pushPage('item.html')">
+          Item
         </ons-button>
 
         <h3>My Google Maps Demo</h3>
 
         <div id="map"></div>
+
+        <p>
+          You have pushed {{ app.pushes }} times and popped {{ app.pops }} times.
+        </p>
+      </section>
+    </ons-page>
+  </ons-template>
+
+  <!-- アイテムの生成と配置 -->
+  <ons-template id="item.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">Test of courage</div>
+      </ons-toolbar>
+      <p>
+        アイテムの生成と配置をここで行います。
+      </p>
+      <section style="padding: 10px">
+        <ons-button ng-click="navi.pushPage('item.html')">
+          Push Page
+        </ons-button>
 
         <p>
           You have pushed {{ app.pushes }} times and popped {{ app.pops }} times.
