@@ -1,2 +1,6 @@
-/**/
+/* 俺たちで追加するcssはここに記述 */
 
+/* #id .OnsenUIの要素 */
+#toppage .page__background {
+    background-image: url('../image/top.jpg');
+}
